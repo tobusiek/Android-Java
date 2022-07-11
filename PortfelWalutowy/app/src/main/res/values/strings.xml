@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PortfelWalutowy</string>
+    <string name="title">Twój portfel:</string>
+    <string name="wallet">Wartość całego portfela:</string>
+    <string-array name="currency_list">
+        <item>Złotówki</item>
+        <item>Euro</item>
+        <item>Dolary</item>
+        <item>Franki Szwajcarskie</item>
+    </string-array>
+    <string name="pln">PLN: </string>
+    <string name="eur">EUR: </string>
+    <string name="usd">USD: </string>
+    <string name="chf">CHF: </string>
+</resources>

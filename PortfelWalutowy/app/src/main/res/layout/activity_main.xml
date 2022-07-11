@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="24sp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewPLN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pln"
+        app:layout_constraintTop_toBottomOf="@id/textViewWallet"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPLNBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        app:layout_constraintTop_toTopOf="@id/textViewPLN"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPLN"
+        app:layout_constraintLeft_toRightOf="@id/textViewPLN"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewEUR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eur"
+        app:layout_constraintTop_toBottomOf="@id/textViewPLN"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEURBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        app:layout_constraintTop_toTopOf="@id/textViewEUR"
+        app:layout_constraintBottom_toBottomOf="@id/textViewEUR"
+        app:layout_constraintLeft_toRightOf="@id/textViewEUR"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usd"
+        app:layout_constraintTop_toBottomOf="@id/textViewEUR"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUSDBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        app:layout_constraintTop_toTopOf="@id/textViewUSD"
+        app:layout_constraintBottom_toBottomOf="@id/textViewUSD"
+        app:layout_constraintLeft_toRightOf="@id/textViewUSD"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewCHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chf"
+        app:layout_constraintTop_toBottomOf="@id/textViewUSD"
+        app:layout_constraintBottom_toTopOf="@id/textViewOneCurrency"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/textViewCHFBalance" />
+
+    <TextView
+        android:id="@+id/textViewCHFBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        app:layout_constraintTop_toTopOf="@id/textViewCHF"
+        app:layout_constraintBottom_toBottomOf="@id/textViewCHF"
+        app:layout_constraintLeft_toRightOf="@id/textViewCHF"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewOneCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wallet"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewCHF"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewOneCurrency"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Spinner
+        android:id="@+id/currencySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewBalance"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
